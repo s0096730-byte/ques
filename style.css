@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffdde1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+.gif-container img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* बटन कंटेनर को सही करना */
+.btn-container {
+    display: flex;
+    justify-content: center; /* बीच में लाएं */
+    align-items: center;
+    gap: 40px; /* दोनों बटनों के बीच 40px की दूरी */
+    width: 100%;
+    height: 60px; /* बटनों के लिए फिक्स जगह */
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 100; /* बटन सबसे ऊपर रहें */
+}
+
+.yes-btn {
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.no-btn {
+    background-color: #dc3545;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* यहाँ से position: absolute हटा दिया गया है ताकि वे ओवरलैप न करें */
+}
